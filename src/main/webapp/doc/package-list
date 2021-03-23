@@ -1,0 +1,6 @@
+com.rays.ors.bean
+com.rays.ors.controller
+com.rays.ors.exception
+com.rays.ors.model
+com.rays.ors.testModel
+com.rays.ors.util
