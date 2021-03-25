@@ -27,6 +27,13 @@ import com.rays.ors.util.ServletUtility;
  */
 @WebFilter(filterName = "FrontCtl", urlPatterns = { "/ctl/*", "/doc/*" })
 public class FrontController implements Filter {
+/*
+	 * (non-Javadoc)
+	 * 
+	 * @see javax.servlet.Filter#init(javax.servlet.FilterConfig)
+	 */
+	public void init(FilterConfig conf) throws ServletException {
+	}
 
 	/*
 	 * (non-Javadoc)
@@ -56,14 +63,7 @@ public class FrontController implements Filter {
 		}
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see javax.servlet.Filter#init(javax.servlet.FilterConfig)
-	 */
-	public void init(FilterConfig conf) throws ServletException {
-	}
-
+	
 	/*
 	 * (non-Javadoc)
 	 * 
