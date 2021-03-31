@@ -7,7 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//import org.apache.log4j.Logger;
+import org.apache.log4j.Logger;
 
 import com.rays.ors.util.ServletUtility;
 
@@ -25,7 +25,7 @@ public class WelcomeCtl extends BaseCtl {
 	private static final long serialVersionUID = 1L;
 
 	/** The log. */
-//	private static Logger log = Logger.getLogger(WelcomeCtl.class);
+	private static Logger log = Logger.getLogger(WelcomeCtl.class);
 
 	/**
 	 * Contains Display logics.
@@ -38,9 +38,9 @@ public class WelcomeCtl extends BaseCtl {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-	//	log.debug("WelcomeCtl Method doGet Started");
+		log.debug("WelcomeCtl Method doGet Started");
 		ServletUtility.forward(getView(), request, response);
-	//	log.debug("WelcomeCtl Method doGet Ended");
+		log.debug("WelcomeCtl Method doGet Ended");
 	}
 
 	/*
