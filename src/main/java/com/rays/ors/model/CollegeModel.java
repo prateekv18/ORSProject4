@@ -98,7 +98,12 @@ public class CollegeModel {
 			pstmt.close();
 		} catch (Exception e) {
 
-			// log.error("Database Exception..", e);
+			 
+			
+			
+			
+			
+			.error("Database Exception..", e);
 
 			try {
 				conn.rollback();
